@@ -1,0 +1,97 @@
+/*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template-overviews/shop-homepage)
+ * Copyright 2013-2019 Start Bootstrap
+ * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+body {
+  font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif;
+  color: #222;
+  line-height: 1.625;
+  font-size: 1rem;
+}
+blockquote {
+  border-left: 2.5px solid #40b4f5;
+  padding-left: 25px;
+  font-style: italic;
+}
+
+.main-row{
+  padding:2.5rem 2px 40px 20px;
+  width:98%;
+}
+@media (min-width: 768px) {
+  .main-row {
+    padding: 2.5rem 2px 40px 40px;
+    width: 98%;
+  }
+}
+#sidebar {
+  background-color:white;
+  padding-top:2.5rem;
+}
+#sidebar a{
+  color:#222;
+}
+#sidebar a:hover{
+  color:#5d93ff;
+}
+
+time{
+  color:gray;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.container-page{
+}
+h1{
+  margin-bottom:1.2rem
+}
+#sidebar:after{
+
+  background: #e6e6e6;
+  background: -webkit-gradient(linear,left top,left bottom,from(#e6e6e6),color-stop(48%,#e6e6e6),to(#fff));
+  background: linear-gradient(180deg,#e6e6e6 0,#e6e6e6 48%,#fff);
+  position: absolute;
+  content: "";
+  width: .0625rem;
+  height: 540px;
+  top: 30px;
+  right: -10px;
+  bottom: 0;
+
+}
+.sidebar-overlay {
+  min-width: 280px;
+  max-width: 280px;
+  height: 100vh;
+  padding: 35px;
+  position: fixed;
+
+  top: 0;
+  left: 0;
+  /* top layer */
+  z-index: 9999;
+}
+
+.overlay {
+  display: none;
+  top: 0;
+  position: fixed;
+  /* full screen */
+  width: 100vw;
+  height: 100vh;
+  /* transparent black */
+  background: rgba(0, 0, 0, 0.7);
+  /* middle layer, i.e. appears below the sidebar */
+  z-index: 998;
+  opacity: 0;
+  /* animate the transition */
+  transition: all 0.5s ease-in-out;
+}
+/* display .overlay when it has the .active class */
+.overlay.active {
+  display: block;
+  opacity: 1;
+}
+
