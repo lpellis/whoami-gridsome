@@ -63,6 +63,9 @@
       <li v-for="item in $static.metadata.socialMenuItems" v-bind:key="item.url">
         <a :title="item.name" :href="item.url"><i :class="`fab fa-${item.icon}`"></i></a>
       </li>
+      <li>
+        <a title="RSS Feed" href="/feed.xml"><i class="fa fa-rss" style="font-size:100%"></i></a>
+      </li>
     </ul>
   </div>
 </template>
