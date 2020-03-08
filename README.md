@@ -1,14 +1,20 @@
-# Default starter for Gridsome
+# WhoAmI.dev gridsome starter
+This is the gridsome project for https://whoami.dev
 
-This is the project you get when you run `gridsome create new-project`.
+## 1. Installation instructions
 
-### 1. Install Gridsome CLI tool if you don't have
+####1. Clone/Fork this repository and create a new site in Netlify using the following settings:
 
-`npm install --global @gridsome/cli`
+    Build command: npm run build
+    Publish Directory: dist 
 
-### 2. Create a Gridsome project
+####2. Setup the following Environment variables:
 
-1. `gridsome create my-gridsome-site` to install default starter
-2. `cd my-gridsome-site` to open the folder
-3. `gridsome develop` to start a local dev server at `http://localhost:8080`
-4. Happy coding 🎉🙌
+    SITE_NAME: Your site name
+    SITE_URL:  Homepage url of your site (without slash at end), eg https://loftie.com
+    WHOAMI_BLOG: [the blog id from your account]
+        
+###3. Setup an automatic build hook
+To have your site automatically deployed whenever an update is made, create a new Build hook in Netlify.
+Copy the url and set it up under your account at whoami.dev (Settings->Custom Domain)
+
