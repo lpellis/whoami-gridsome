@@ -33,6 +33,14 @@ module.exports = function(api) {
     }
     type WPost implements Node @infer {
       syndication: [Syndication]
+      title: String
+      content: String
+      coverImage: String
+      excerpt: String
+      publishDate: Date
+      createdDate: Date
+      path: String
+      tags: [WTag]
     }
     type NestedMenuItem {
       name: String
