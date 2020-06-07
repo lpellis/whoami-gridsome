@@ -24,6 +24,15 @@ module.exports = function(api) {
       slug: String
       title: String
     }
+    type WProject implements Node @infer {
+      name: String
+      html: String
+    }    
+    type WPage implements Node @infer {    
+      title: String
+      content: String
+      publishDate: Date
+    }        
     type Syndication{
        name: String
        displayName: String
